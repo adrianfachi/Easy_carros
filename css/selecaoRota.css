@@ -1,0 +1,102 @@
+:root {
+	--fonte-inter: "Inter", sans-serif;
+	--font-outfit: "Outfit", sans-serif;
+}
+
+main {
+	background-image: url(../Imagens/SelecaoRota.png);
+	position: relative;
+	display: flex;
+	align-items: end;
+}
+
+section {
+	background-color: #4898913c;
+	border-radius: 10px;
+	height: 40%;
+	width: 63%;
+	margin-bottom: 5%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 3vh;
+}
+
+h1 {
+	font-size: 2rem;
+	color: #ffffff;
+	font-family: var(--font-outfit);
+}
+
+.datas {
+	border-radius: 5px;
+	padding: 0.8rem;
+	background-color: #ffffff;
+	border: #ffffff solid 1px;
+	width: 200px;
+	font-family: var(--font-outfit);
+	text-decoration: none;
+}
+
+.direitos {
+	font-size: 0.5em;
+}
+
+.procurar {
+	padding: 0.8rem;
+	font-family: var(--font-outfit);
+	background-color: #00bb2d;
+	color: #ffffff;
+	border-radius: 5px;
+	border: #00bb2d solid 1px;
+	width: 150px;
+	cursor: pointer;
+}
+
+.botoes {
+	display: flex;
+	gap: 30px;
+}
+
+@media (max-width: 1200px) {
+	main {
+        justify-content: center;
+		height: calc(100vh - 14.625rem);
+        background-image: none;
+        background-color: #ffffff;
+        align-items: top;
+        padding: 10%;
+	}
+
+    h1 {
+        color: black;
+    }
+    
+    section {
+        background-color: #ffffff;
+        width: 100%;
+        
+    }
+
+    .datas {
+        background-color: #ededed;
+        margin: 5px;
+    }
+}
+
+@media (max-width:830px){
+    .botoes {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    #datas {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .procurar {
+        margin: 5px;
+    }
+}

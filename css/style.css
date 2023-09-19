@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --fonte-inter: 'Inter', sans-serif; 
+    --font-outfit: 'Outfit', sans-serif;
+}
+
+header {
+    background-color: #FFFFFF;
+    display: flex;
+    height: 5.625rem;
+    align-items: center;
+    justify-content: space-around;
+    filter: drop-shadow(0 4px 4px #a8a8a8);
+}
+#menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+    white-space: nowrap;
+    font-family: var(--fonte-inter);
+    font-size: 1,125rem;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+.link-normal {
+    color: #489891;
+}
+
+.easy-trip {
+    background-color: #0CDAC3;
+    padding: 3%;
+    border-radius: 7px;
+    font-family: var(--fonte-inter);
+    
+}
+
+#easy-trip {
+    font-size: 1,125rem;
+    color: #FFFFFF;
+}
+
+main {
+    height: calc(100vh - 14.625rem);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 9rem;
+    background-color: #EDF3FF;
+    text-align: center;
+    position: relative;
+    font-weight: 700;
+    font-size: 2rem;    
+    font-family: var(--font-outfit);
+    color: #324156;
+}
+
+.fale-conosco {
+    background-color: #00BB2D;
+    position: fixed;
+    margin-left: 80%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-top-left-radius: 19px;
+    border-top-right-radius: 19px;
+    font-family: var(--fonte-inter);
+    font-size: 1,125rem;
+    color: #FFFFFF;
+    gap: 3px;
+    font-weight: 400;
+    font-size: .8rem;
+    bottom: 0;
+    width: 200px;
+}
+
+#botao-menu {
+    display: none;
+    align-items: center;
+    gap: 5px;
+    border: 0;
+    color: #489891;
+    font-size: 1.125rem;
+    font-family: var(--fonte-inter);
+}
+
+.barras {
+    border-top: solid 0.125rem #489891;
+    width: 1.125rem;
+}
+
+.barras::after, .barras::before {
+    content: " ";
+    display: block;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: currentColor;
+    margin-top: 0.3125rem;
+}
+
+@media (max-width: 1200px) {
+    main {
+        height: auto;
+        flex-direction: column-reverse;
+    }
+
+    footer {
+        font-size: 1.5rem;
+    }
+
+    .fale-conosco {
+        margin-right: 20%;
+    }
+}
+
+@media (max-width: 600px) {
+    #botao-menu {
+        display: flex;
+    }
+    #menu {
+        display: none;
+        flex-direction: column;
+        justify-content: flex-start;
+        position: absolute;
+        top: 5.625rem;
+        left: 0;
+        background-color: #FFFFFF;
+        text-align: center;
+        width: 100%;
+        height: calc(100vh - 5.625rem);
+        z-index: 1;
+    }
+    .easy-trip {
+        padding: 0;
+        background-color: #FFFFFF;
+    }
+
+    #easy-trip {
+        color: #489891;
+    }
+    
+    #menu.active {
+        display: flex;
+        height: auto;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+
+    .fale-conosco {
+        margin-right: 50%;
+    }
+}
+
+

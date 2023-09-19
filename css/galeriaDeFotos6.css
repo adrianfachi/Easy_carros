@@ -1,0 +1,31 @@
+main {
+    background-image: url(../Imagens/Section5.png);
+    justify-content: end;
+    align-items: baseline;
+}
+
+.links {
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+#voltar {
+    background-color: #fff;
+    padding: 15px;
+    color: #00BB2D;
+    border-radius: 10px;
+    font-weight: 600;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#conhecer {
+    background-color: #00BB2D;
+    padding: 15px;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: 600;
+    padding-left: 30px;
+    padding-right: 30px;
+}

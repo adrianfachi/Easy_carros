@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2? family= Krona+One & family= Montserrat:wght@400;600 & family= Outfit & display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Inter & family= Krona+One & family= Montserrat:wght@400;600 & family= Outfit & display=swap');
+
+:root {
+    --fonte-inter: 'Inter', sans-serif; 
+    --font-outfit: 'Outfit', sans-serif;
+}
+
+main {
+    background-image: url(../Imagens/RotaFinder1.png);
+    background-position: bottom;
+    display: flex;
+    align-items: end;
+}
+
+section {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20%;
+    padding: 80px;
+    align-items: center;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 2.75rem;
+    font-family: var(--font-outfit);
+}
+
+p {
+    font-size: 19px;
+    font-family: var(--font-outfit);
+    color: #ffffff;
+    line-height: 150%;
+}
+
+.direita {
+    text-align: end;
+}

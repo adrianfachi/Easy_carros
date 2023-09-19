@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2? family= Krona+One & family= Montserrat:wght@400;600 & family= Outfit & display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Inter & family= Krona+One & family= Montserrat:wght@400;600 & family= Outfit & display=swap');
+
+:root {
+    --fonte-inter: 'Inter', sans-serif; 
+    --font-outfit: 'Outfit', sans-serif;
+}
+
+main {
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 12%;
+    padding-left: 15%;  
+    gap: 80px;
+}
+
+.carro{
+    width: 40%;
+}
+
+.home-principal {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.titulo-home {
+    font-size: 2.75rem;
+    font-family: var(--font-outfit);
+}
+
+.texto-principal {
+    font-size: 1.1875rem;
+    font-family: var(--font-outfit);
+    line-height: 1.8;
+}
+
+.saber-mais {
+    background-color: #0CDAC3;
+    padding: 13px;
+    margin-right: 50%;
+    text-align: center;
+    border-radius: 19px;
+    font-family: var(--fonte-inter);
+    font-size: 1,125rem;
+    color: #FFFFFF;
+}
+
+@media ( max-width: 800px) {
+    .carro {
+        width: 80%;
+    }
+    
+    main {
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+}

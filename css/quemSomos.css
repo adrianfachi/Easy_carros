@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2? family= Krona+One & family= Montserrat:wght@400;600 & family= Outfit & display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Inter & family= Krona+One & family= Montserrat:wght@400;600 & family= Outfit & display=swap');
+
+:root {
+    --fonte-inter: 'Inter', sans-serif; 
+    --font-outfit: 'Outfit', sans-serif;
+}
+
+.minha-foto {
+    height: 25vw;
+    border-radius: 50%;
+    border: #0CDAC3 solid 5px;
+}
+
+main {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    font-family: var(--font-outfit);
+}
+
+section {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+.principal {
+    width: 40%;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #0CDAC3;
+}
+
+.link-figma {
+    color: #fff;
+    background-color: #0CDAC3;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+footer {
+    font-size: 1rem;
+}
+
+.link-whatts {
+    color: #0CDAC3;
+}

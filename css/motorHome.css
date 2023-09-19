@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2? family= Krona+One & family= Montserrat:wght@400;600 & family= Outfit & display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Inter & family= Krona+One & family= Montserrat:wght@400;600 & family= Outfit & display=swap');
+
+:root {
+    --fonte-inter: 'Inter', sans-serif; 
+    --font-outfit: 'Outfit', sans-serif;
+}
+
+.motorHome {
+    background-image: url(../Imagens/fundoRotaFounder.png);
+    background-position: bottom;
+    display: flex;
+    padding-left: 5%;
+}
+
+.principal {
+    width: 40%;
+    font-family: var(--font-outfit);
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    align-items: center;
+    margin-top: 8%;
+}
+
+h1 {
+    font-size: 2.4rem;
+    text-align: left;
+}
+
+p {
+    font-size: 1rem;
+    text-align: left;
+    line-height: 150%;
+}
+
+.links {
+    padding: 15px;
+    color: #fff;
+    font-size: 1.125rem;
+    border-radius: 10px;
+    width: 85%;
+}
+
+#quero {
+    background-color: #00BB2D;
+}
+
+#RotaFinder {
+    background-color: #009925;
+}
+
+#conta {
+    background-color: #FFF;
+    color: #00BB2D;
+    width: 42.5%;
+    align-items: center;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#galeria {
+    position: absolute;
+    background-color: #FFF;
+    color: black;
+    padding: 5px;
+    padding-left: 33px;
+    padding-right: 33px;
+    border-radius: 10px;
+    margin-top: 71px;
+    right: 228px;
+}
+
+#galeria2 {
+   position: absolute;
+   right: 56px;
+   margin-top: 52px;
+}
+
+#galeria1 {
+    position: absolute;
+    right: 186px;
+    margin-top: 91px;
+}
+
+.explicacaoServico {
+    padding: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #2B3748;
+    font-size: 1.125rem;
+}
+
+@media (max-width: 1000px) {
+    .motorHome {
+        flex-direction: column;
+        padding: 10%;
+        padding-bottom: 300px;
+        background: #fff;
+    }
+
+    .principal {
+        width: 100%;
+        color: black;
+    }
+}
+
+@media (max-width: 600px) {
+    .motorHome {
+        padding-bottom: 0;
+    }
+    #galeria {
+        right: 50vw;
+        width: 25vw;
+    }
+
+    #galeria1 {
+        position: relative;
+        right: inherit;
+        width: 50vw;
+    }
+
+    #galeria2 {
+        position: none;
+        width: 50vw;
+    }
+}
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Seleção de rota</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/selecaoRota.css">
+    </head>
+    <body>
+        <header>
+            <div>
+                <img src="Imagens/logo.png" alt="Logo">
+            </div>
+            <div class="ancoras-header">
+                <button id="botao-menu">Menu <span class="barras"></span></button>
+                <ul id="menu">
+                    <li><a href="home.html" class="link-normal">Nosso hub</a></li>
+                    <li><a href="quemSomos.html" class="link-normal">Quem somos</a></li>
+                    <li class="easy-trip"><a href="motorHome.html" id="easy-trip">Easy trip</a></li>
+                </ul>   
+            </div>
+        </header>
+        <main>
+            <section>
+                <div class="titulo">
+                    <h1>Vamos separar o que temos de melhor para você</h1>
+                </div>
+                <div class="botoes">
+                    <div id="datas">
+                        <input type="text" id="DataDePartida" placeholder="Data de partida" onfocus="this.type='date'" class="datas">
+                        <input type="text" id="DataDeRetorno" placeholder="Data de retorno" onfocus="this.type='date'" class="datas">
+                    </div>
+                    <div>
+                        <input type="button" value="Procurar" class="procurar" onclick="procurar()">
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p class="direitos"> ® EasyCarros © Todos os direitos reservados</p>
+            <a href="https://api.whatsapp.com/send?phone=5551996105286" class="fale-conosco"><img src="Imagens/whats.png" alt="Logo whatsapp" > Fale conosco via Whatsapp</a>
+        </footer>
+        <script src="app.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

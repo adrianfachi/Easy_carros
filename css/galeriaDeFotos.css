@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2? family= Krona+One & family= Montserrat:wght@400;600 & family= Outfit & display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Inter & family= Krona+One & family= Montserrat:wght@400;600 & family= Outfit & display=swap');
+
+:root {
+    --fonte-inter: 'Inter', sans-serif; 
+    --font-outfit: 'Outfit', sans-serif;
+}
+
+main {
+    background-image: url(../Imagens/Section.png);
+    background-size: 100%;
+    background-position: bottom;
+    height: 88vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    font-family: var(--font-outfit);
+}
+
+footer {
+    background-color: transparent;
+    height: 0;
+}
+
+.link-seta {
+    padding-bottom: 2%; 
+}
+
+.seta {
+    height: 80%;
+    width: 80%;
+}

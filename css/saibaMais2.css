@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2? family= Krona+One & family= Montserrat:wght@400;600 & family= Outfit & display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Inter & family= Krona+One & family= Montserrat:wght@400;600 & family= Outfit & display=swap');
+
+:root {
+    --fonte-inter: 'Inter', sans-serif; 
+    --font-outfit: 'Outfit', sans-serif;
+}
+
+main {
+    background-image: url(../Imagens/SaibaMais2.png);
+    background-position: bottom;
+    display: flex;
+    align-items: end;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 34%;
+    padding: 95px;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 2rem;
+    font-family: var(--font-outfit);
+}
+
+p {
+    font-size: 1rem;
+    font-family: var(--font-outfit);
+    color: #ffffff;
+    line-height: 150%;
+}
+
+.MotorHome {
+    background-color: #00BB2D;
+    font-size: 1.2rem;
+    padding: 20px;
+    color: #ffffff;
+    border-radius: 30px;
+    width: 20%;
+}

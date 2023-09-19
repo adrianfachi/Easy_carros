@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2? family= Krona+One & family= Montserrat:wght@400;600 & family= Outfit & display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Inter & family= Krona+One & family= Montserrat:wght@400;600 & family= Outfit & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+
+:root {
+    --fonte-inter: 'Inter', sans-serif; 
+    --font-outfit: 'Outfit', sans-serif;
+}
+
+main {
+    background-color: #fff;
+    display:  flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1%;
+    padding: 50px;
+    height: auto;
+}
+
+section {
+    width: auto;
+    border-radius: 9px;
+    box-shadow: 0 4px 25px rgb(0, 0, 0, 0.25);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+section.principal{
+    padding: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
+    gap: 35px;
+}
+
+#voltar {
+    position: absolute;
+    margin-top: -30px;
+    margin-left: -90px;
+    color: #0084F9;
+    font-family: var(--font-outfit);
+    font-size: .8rem;
+}
+
+h1 {
+    font-family: var(--font-outfit);
+}
+
+#titulo-servico {
+    font-size: 1rem;
+}
+
+#valor {
+    font-size: 2.25rem;
+    font-family: var(--font-outfit);
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+#escrita {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#imgPrincipal {
+    border-radius: 10px;
+}
+
+#totalDias {
+    font-family: var(--font-outfit);
+}
+
+h2 {
+    font-size: 1.2rem;
+}
+
+#especificacoes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+}
+
+.especificacoes {
+    text-align: left; 
+}
+
+#reservar {
+    background-color: #00BB2D;
+    padding: 13px;
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: var(--font-outfit);
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.direitos {
+    font-size: .5em;
+}
+
