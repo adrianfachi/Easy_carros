@@ -4,23 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quem somos</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/quemSomos.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/quemSomos.css">
 </head>
 <body>
     <header>
         <div>
-            <img src="Imagens/logo.png" alt="Logo">
+            <img src="../Imagens/logo.png" alt="Logo">
         </div>
         <div class="ancoras-header">
-            <a href="home.html" class="link-normal">Nosso hub</a>
-            <a href="quemSomos.html" class="link-normal">Quem somos</a>
-            <a href="motorHome.html" class="easy-trip">Easy trip</a>
+            <button id="botao-menu">Menu <span class="barras"></span></button>
+            <ul id="menu">
+                <li><a href="../home.html" class="link-normal">Nosso hub</a></li>
+                <li><a href="quemSomos.html" class="link-normal">Quem somos</a></li>
+                <li class="easy-trip"><a href="motorHome.html" id="easy-trip">Easy trip</a></li>
+            </ul>
         </div>
     </header>
     <main>  
         <section>
-            <img src="Imagens/Minha-foto.png" alt="" class="minha-foto">
+            <img src="../Imagens/Minha-foto.png" alt="" class="minha-foto">
             <div class="principal">
                 <div class="texto">
                     <h1>Conheça o desenvolvedor do site!</h1>
@@ -37,4 +40,5 @@
         
     </footer>
 </body>
+<script src="../app.js"></script>
 </html>

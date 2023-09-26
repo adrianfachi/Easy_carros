@@ -7,7 +7,7 @@
 }
 
 .minha-foto {
-    height: 25vw;
+    height: 30vw;
     border-radius: 50%;
     border: #0CDAC3 solid 5px;
 }
@@ -64,4 +64,32 @@ footer {
 
 .link-whatts {
     color: #0CDAC3;
+}
+
+@media (max-width: 1500px) {
+    .minha-foto {
+        width: 40vw;
+        height: 40vw;
+    }
+}
+
+@media (max-width: 1200px) {
+    .minha-foto {
+        width: 50vw;
+        height: 50vw;
+    }
+   
+}
+
+@media (max-width: 800px) {
+    .minha-foto {
+        width: 70vw;
+        height: 70vw;
+    }
+    .principal {
+        width: 80vw;
+    }
+    section {
+        flex-direction: column;
+    }
 }

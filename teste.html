@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Google Maps com Rotas e Locais de Interesse</title>
+    <style>
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mapa do Google com Rotas e Locais de Interesse</h1>
+    
+    <div>
+        <label for="origem">Local de Partida:</label>
+        <input type="text" id="origem" placeholder="Digite o local de partida">
+        <br>
+        <label for="destino">Local de Destino:</label>
+        <input type="text" id="destino" placeholder="Digite o local de destino">
+        <br>
+        <label for="tipo-locais">Selecione o Tipo de Local:</label>
+        <select id="tipo-locais">
+            <option value="restaurant">Restaurantes</option>
+            <option value="park">Parques</option>
+            <option value="museum">Museus</option>
+            <option value="theater">Teatros</option>
+            <option value="movie_theater">Cinemas</option>
+        </select>
+        <br>
+        <button onclick="calcularRota()">Calcular Rota</button>
+    </div>
+
+    <div id="map"></div>
+
+    <script>
+        function initMap() {
+            const map = new google.maps.Map(document.getElementById('map'), {
+                center: { lat: -23.5505, lng: -46.6333 }, // Coordenadas de São Paulo, Brasil
+                zoom: 12
+            });
+
+            const directionsService = new google.maps.DirectionsService();
+            const directionsRenderer = new google.maps.DirectionsRenderer({
+                map: map
+            });
+
+            document.getElementById('tipo-locais').addEventListener('change', () => {
+                buscarLocaisInteresse(map);
+            });
+
+            calcularRota = () => {
+                const origem = document.getElementById('origem').value;
+                const destino = document.getElementById('destino').value;
+
+                const request = {
+                    origin: origem,
+                    destination: destino,
+                    travelMode: 'DRIVING'
+                };
+
+                directionsService.route(request, (result, status) => {
+                    if (status === 'OK') {
+                        directionsRenderer.setDirections(result);
+                    } else {
+                        alert('Não foi possível calcular a rota: ' + status);
+                    }
+                });
+            };
+
+            buscarLocaisInteresse = (map) => {
+                const tipoLocal = document.getElementById('tipo-locais').value;
+                const request = {
+                    location: map.getCenter(),
+                    radius: 5000, // Raio de busca em metros
+                    type: [tipoLocal]
+                };
+
+                const service = new google.maps.places.PlacesService(map);
+                service.nearbySearch(request, (results, status) => {
+                    if (status === 'OK') {
+                        exibirLocaisNoMapa(results, map);
+                    } else {
+                        alert('Erro ao buscar locais de interesse: ' + status);
+                    }
+                });
+            };
+
+            exibirLocaisNoMapa = (results, map) => {
+                const bounds = new google.maps.LatLngBounds();
+
+                for (let i = 0; i < results.length; i++) {
+                    const place = results[i];
+                    const marker = new google.maps.Marker({
+                        map: map,
+                        position: place.geometry.location
+                    });
+
+                    bounds.extend(place.geometry.location);
+                }
+
+                map.fitBounds(bounds);
+            };
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxhd8FN_-EFOI9sT0tooEX9aBAU3dZXb0&callback=initMap&libraries=places" async defer></script>
+</body>
+</html>
