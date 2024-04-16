@@ -57,3 +57,32 @@ footer {
     display: flex;
     gap: 50px;
 }
+
+@media (max-width: 800px) {
+    main {
+        background-position: 30%;
+    }
+    section {
+        padding: 10px;
+        padding-bottom: 80px;
+        flex-direction: column;
+        width: auto;
+    }
+    .direita {
+        text-align: start;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+
+    footer {
+        flex-direction: column-reverse;
+        gap: 10px;
+        height: 200px;
+    }
+    .links {
+        width: 70vw;
+        padding: 10px;
+        font-size: 0.8rem;
+    }
+}

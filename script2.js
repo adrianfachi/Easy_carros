@@ -53,8 +53,23 @@ window.addEventListener("load", async () => {
 	}
 });
 
+window.addEventListener("change", async () => {
+	const urlCidade = "https://servicodados.ibge.gov.br/api/v1/localidades/estados/"+selectStates.value+"/municipios";
+	const request = await fetch(urlCidade);
+	const response = await request.json();
+
+	for (const iterator of response) {
+		const criaOption = document.createElement("option");
+		criaOption.text = iterator.nome;
+		selectCities.append(criaOption);
+		localStorage.setItem("LocalDestinoCity", selectCities.value)
+		localStorage.setItem("LocalDestinoUF", selectStates.value)
+	}
+});
+
 cidadePartida.addEventListener("change", () => {
 	localStorage.setItem("LocalPartida", cidadePartida.value);
+	console.log(localStorage.getItem("LocalPartida"))
 });
 
 function visualizarVeiculos() {
@@ -65,37 +80,16 @@ function visualizarVeiculos() {
 	) {
 		alert("Por favor informe a cidade de partida e destino");
 	} else {
-		window.location = "HTMLs/SelecaoVeiculo.html";
+		window.location = "SelecaoVeiculo.html"
+		localStorage.setItem("LocalDestino", localStorage.getItem("LocalDestinoCity") + ", " + localStorage.getItem("LocalDestinoUF"));
 	}
 }
 
-var map;
-var directionsService;
-var directionsDisplay;
 
-function initialize() {
-	map = new google.maps.Map(document.getElementById("map"), {
-		center: { lat: 0, lng: 0 },
-		zoom: 8,
-	});
-	directionsService = new google.maps.DirectionsService();
-	directionsDisplay = new google.maps.DirectionsRenderer();
-	directionsDisplay.setMap(map);
-}
 
-function calcRoute() {
-	var start = localStorage.getItem("LocalPartida")
-	var end = localStorage.getItem("LocalDestino")
-	var request = {
-		origin: start,
-		destination: end,
-		travelMode: "DRIVING",
-	};
-	directionsService.route(request, function (result, status) {
-		if (status == "OK") {
-			directionsDisplay.setDirections(result);
-		}
-	});
-}
+visualizarVeiculos.addEventListener('click', async function(){
+	console.log(localStorage.getItem("LocalDestino"))
+	console.log(CidadeUf)
+})
 
-google.maps.event.addDomListener(window, "load", initialize);
+

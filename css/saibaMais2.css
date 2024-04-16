@@ -42,3 +42,16 @@ p {
     border-radius: 30px;
     width: 20%;
 }
+
+@media (max-width: 800px) {
+    section {
+        width: 80vw;
+        padding: 10px;
+    }
+
+    .MotorHome {
+        font-size: 1rem;
+        width: auto;
+        margin: 10px;
+    }
+}

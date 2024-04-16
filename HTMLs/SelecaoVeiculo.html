@@ -4,18 +4,21 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Seleção de veículo</title>
-		<link rel="stylesheet" href="css/style.css" />
-		<link rel="stylesheet" href="css/selecaoVeiculo.css" />
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../css/selecaoVeiculo.css" />
 	</head>
 	<body>
 		<header>
 			<div>
-				<img src="Imagens/logo.png" alt="Logo" />
+				<img src="../Imagens/logo.png" alt="Logo">
 			</div>
 			<div class="ancoras-header">
-				<a href="home.html" class="link-normal">Nosso hub</a>
-				<a href="quemSomos.html" class="link-normal">Quem somos</a>
-				<a href="motorHome.html" class="easy-trip">Easy trip</a>
+				<button id="botao-menu">Menu <span class="barras"></span></button>
+				<ul id="menu">
+					<li><a href="../home.html" class="link-normal">Nosso hub</a></li>
+					<li><a href="quemSomos.html" class="link-normal">Quem somos</a></li>
+					<li class="easy-trip"><a href="motorHome.html" id="easy-trip">Easy trip</a></li>
+				</ul>
 			</div>
 		</header>
 		<main>
@@ -90,34 +93,35 @@
 			</section>
             <section class="principaisVeiculos">
                 <div class="fileiras">
-                    <div class="carro1"><button class="links-carros"><p class="selecionar">Selecionar</p></button><p class="preco">R$589,00 diária</p></div>
-                    <div class="carro2"><button class="links-carros"><p class="selecionar">Selecionar</p></button><p class="preco">R$997,00 diária</p></div>
-                    <div class="carro3"><button class="links-carros"><p class="selecionar">Selecionar</p></button><p class="preco">R$338,00 diária</p></div>
+                    <div id="carro1" class="carros"><button class="links-carros"><p class="selecionar">Selecionar</p></button><p class="preco">R$589,00 diária</p></div>
+                    <div id="carro2" class="carros"><button class="links-carros"><p class="selecionar">Selecionar</p></button><p class="preco">R$997,00 diária</p></div>
+                    <div id="carro3" class="carros"><button class="links-carros"><p class="selecionar">Selecionar</p></button><p class="preco">R$338,00 diária</p></div>
                 </div>
                 <div class="fileiras">
-                    <div class="carro4"><button class="links-carros"><p class="selecionar">Selecionar</p></button><p class="preco">R$1127,00 diária</p></div>
-                    <div class="carro5"><button class="links-carros"><p class="selecionar">Selecionar</p></button><p class="preco">R$399,00 diária</p></div>
-                    <div class="carro6"><button class="links-carros"><p class="selecionar">Selecionar</p></button><p class="preco">R$479,00 diária</p></div>
+                    <div id="carro4" class="carros"><button class="links-carros"><p class="selecionar">Selecionar</p></button><p class="preco">R$1127,00 diária</p></div>
+                    <div id="carro5" class="carros"><button class="links-carros"><p class="selecionar">Selecionar</p></button><p class="preco">R$399,00 diária</p></div>
+                    <div id="carro6" class="carros"><button class="links-carros"><p class="selecionar">Selecionar</p></button><p class="preco">R$479,00 diária</p></div>
                 </div>
             </section>
 			<section>
 				<h3>Relacionados</h3>
 				<div class="fileiras">
-                    <div class="carro7"><button class="links-carros"><p class="selecionar">Selecionar</p></button><p class="preco">R$296,00 diária</p></div>
-                    <div class="carro8"><button class="links-carros"><p class="selecionar">Selecionar</p></button><p class="preco">R$296,00 diária</p></div>
-                    <div class="carro9"><button class="links-carros"><p class="selecionar">Selecionar</p></button><p class="preco">R$296,00 diária</p></div>
-					<div class="carro10"><button class="links-carros"><p class="selecionar">Selecionar</p></button><p class="preco">R$296,00 diária</p></div>
+                    <div id="carro7" class="carros"><button class="links-carros"><p class="selecionar">Selecionar</p></button><p class="preco">R$296,00 diária</p></div>
+                    <div id="carro8" class="carros"><button class="links-carros"><p class="selecionar">Selecionar</p></button><p class="preco">R$296,00 diária</p></div>
+                    <div id="carro9" class="carros"><button class="links-carros"><p class="selecionar">Selecionar</p></button><p class="preco">R$296,00 diária</p></div>
+					<div id="carro10" class="carros"><button class="links-carros"><p class="selecionar">Selecionar</p></button><p class="preco">R$296,00 diária</p></div>
                 </div>
 			</section>
 		</main>
 		<footer>
 			<p class="direitos">® EasyCarros © Todos os direitos reservados</p>
 			<a href="https://api.whatsapp.com/send?phone=5551996105286" class="fale-conosco"
-				><img src="Imagens/whats.png" alt="Logo whatsapp" /> Fale conosco via
+				><img src="../Imagens/whats.png" alt="Logo whatsapp" /> Fale conosco via
 				Whatsapp</a
 			>
 		</footer>
-        <script src="script2.js"></script>
-		<script src="script3.js"></script>
+        <script src="../script6.js"></script>
+		<script src="../script3.js"></script>
+		<script src="../app.js"></script>
 	</body>
 </html>

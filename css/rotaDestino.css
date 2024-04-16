@@ -7,22 +7,19 @@
 }
 
 main {
-    background-color: #fff;
+    background-image: url(../Imagens/SelecaoRota.png);
+    background-size: cover;
     display:  flex;
     align-items: center;
     justify-content: center;
     gap: 1%;
 }
 
-.map {
-    width: 32%;
-    box-shadow: 0 4px 25px rgb(0, 0, 0, 0.25);
-}
-
 section {
-    width: 18%;
+    width: 50%;
     border-radius: 9px;
     box-shadow: 0 4px 25px rgb(0, 0, 0, 0.25);
+    background-color: #fff;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -73,7 +70,7 @@ form {
 }
 
 select {
-    width: 100px;
+    width: 200px;
     border: 0;
 }
 
@@ -129,6 +126,18 @@ select {
 
 .direitos {
     font-size: .5em;
+}
+
+@media (max-width: 1200px) {
+    section {
+        width: 80%;
+    }
+}
+
+@media (max-width: 300px) {
+    select {
+        width: 100px;
+    }
 }
 
 

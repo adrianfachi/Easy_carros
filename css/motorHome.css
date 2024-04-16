@@ -1,11 +1,15 @@
+@import url('https://fonts.googleapis.com/css2? family= Krona+One & family= Montserrat:wght@400;600 & family= Outfit & display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Inter & family= Krona+One & family= Montserrat:wght@400;600 & family= Outfit & display=swap');
+
 :root {
     --fonte-inter: 'Inter', sans-serif; 
     --font-outfit: 'Outfit', sans-serif;
 }
 
 .motorHome {
-    background-image: url(../Imagens/fundoRotaFounder.png);
-    background-position: bottom;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.719)), url(../Imagens/fundoRotaFounder.png);
+    background-size: cover;
+    background-position: center 58%;
     display: flex;
     padding-left: 5%;
     align-items: center;
@@ -202,8 +206,9 @@ p {
 @media (max-width: 1200px){
     .motorHome {
         flex-direction: column;
-        padding: 0 10%;
+        padding: 10% 10%;
         background: #fff;
+
     }
 
     .principal {
@@ -270,6 +275,21 @@ p {
 
     .slides {
         height: auto;
+    }
+    main {
+        height: auto;
+        align-items: center;
+    }
+}
+
+@media (max-width: 400px) {
+    .links {
+        padding: 10px;
+        font-size: 1rem;
+    }
+    .explicacaoServico {
+        padding: 10px;
+        font-size: 1rem;
     }
 }
 

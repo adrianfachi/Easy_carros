@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
 
 :root {
-    --fonte-inter: 'Inter', sans-serif; 
+    --fonte-inter: 'Inter', sans-serif;
     --font-outfit: 'Outfit', sans-serif;
 }
 
@@ -14,11 +14,9 @@ main {
     justify-content: center;
     gap: 1%;
     padding: 50px;
-    height: auto;
 }
 
 section {
-    width: auto;
     border-radius: 9px;
     box-shadow: 0 4px 25px rgb(0, 0, 0, 0.25);
     padding: 20px;
@@ -27,7 +25,7 @@ section {
     text-align: center;
 }
 
-section.principal{
+.principal{
     padding: 40px;
     padding-left: 100px;
     padding-right: 100px;
@@ -100,5 +98,31 @@ h2 {
 
 .direitos {
     font-size: .5em;
+}
+
+@media (max-width: 1200px) {
+    main {
+        gap: 20px;
+        flex-direction: column;
+        height: auto;
+    }
+    section {
+        width: 80vw;
+        align-items: center;
+        padding: 10px;
+    }
+    .principal {
+        padding: 0;
+        padding-top: 40px;
+        padding-bottom: 10px;
+    }
+    #imgPrincipal {
+        width: 60vw;
+    }
+}
+@media (max-width: 700px) {
+    #imgPrincipal {
+        width: 70vw;
+    }
 }
 

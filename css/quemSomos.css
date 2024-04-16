@@ -92,4 +92,7 @@ footer {
     section {
         flex-direction: column;
     }
+    main {
+        height: auto;
+    }
 }

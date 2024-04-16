@@ -9,6 +9,7 @@
 main {
     background-image: url(../Imagens/RotaFinder2.png);
     background-position: bottom;
+    background-size: cover;
     display: flex;
     align-items: end;
     justify-content: end;
@@ -34,4 +35,22 @@ p {
     font-family: var(--font-outfit);
     color: #ffffff;
     line-height: 150%;
+}
+
+@media (max-width: 800px) {
+    main {
+        background-position: 30%;
+    }
+    section {
+        padding: 10px;
+        padding-bottom: 80px;
+        flex-direction: column;
+        width: auto;
+    }
+    .direita {
+        text-align: start;
+    }
+    h1 {
+        font-size: 2rem;
+    }
 }

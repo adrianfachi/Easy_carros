@@ -8,7 +8,8 @@
 
 main {
     background-image: url(../Imagens/RotaFinder1.png);
-    background-position: bottom;
+    background-position: bottom center;
+    background-size: cover;
     display: flex;
     align-items: end;
 }
@@ -36,4 +37,20 @@ p {
 
 .direita {
     text-align: end;
+}
+
+@media (max-width: 800px) {
+    section {
+        padding: 10px;
+        padding-bottom: 80px;
+        flex-direction: column;
+    }
+    .direita {
+        text-align: start;
+    }
+}
+@media (max-width: 400px) {
+    main {
+        height: auto;
+    }
 }

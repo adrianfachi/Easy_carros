@@ -32,31 +32,30 @@
 				</div>
 				<div id="locais">
 					<form>
-						<label for="estados">Estado de Destino</label>
-						<select id="estados">
-							<option value=""></option>
-						</select>
-					</form>
-					<form>
 						<label>Cidade para locar o veículo</label>
 						<select name="" id="CidadePartida">
 							<option value=""></option>
-							<option value="Belo Horizonte, MG">Belo Horizonte - MG</option>
-							<option value="Curitiba, PR">Curitiba - PR</option>
-							<option value="Fortaleza, CE">Fortaleza - CE</option>
-							<option value="Manaus, AM">Manaus - AM</option>
-							<option value="Porto Alegre - RS">Porto Alegre - RS</option>
-							<option value="Recife, PE">Recife - PE</option>
-							<option value="Rio de Janeiro, RJ">Rio de Janeiro - RJ</option>
-							<option value="São Paulo, SP">São Paulo - SP</option>
-							<option value="Salvador, BH">Salvador - BH</option>
+							<option value="Belo Horizonte, MG">Belo Horizonte, MG</option>
+							<option value="Curitiba, PR">Curitiba, PR</option>
+							<option value="Fortaleza, CE">Fortaleza, CE</option>
+							<option value="Manaus, AM">Manaus, AM</option>
+							<option value="Porto Alegre - RS">Porto Alegre, RS</option>
+							<option value="Recife, PE">Recife, PE</option>
+							<option value="Rio de Janeiro, RJ">Rio de Janeiro, RJ</option>
+							<option value="São Paulo, SP">São Paulo, SP</option>
+							<option value="Salvador, BH">Salvador, BH</option>
 						</select>
 					</form>
-
+					<form>
+						<label for="estados">Estado de Destino</label>
+						<select id="estados">
+							<option></option>
+						</select>
+					</form>
 					<form>
 						<label for="cidades">Cidade de Destino</label>
 						<select name="" id="cidades">
-							<option value=""></option>
+							<option></option>
 						</select>
 					</form>
 				</div>
@@ -96,9 +95,6 @@
 					anteriores
 				</p>
 			</section>
-			<section>
-				<div id="map" style="height: 400px"></div>
-			</section>
 		</main>
 		<footer>
 			<p class="direitos">® EasyCarros © Todos os direitos reservados</p>
@@ -106,43 +102,10 @@
 				href="https://api.whatsapp.com/send?phone=5551996105286"
 				class="fale-conosco"
 				><img src="../Imagens/whats.png" alt="Logo whatsapp" /> Fale conosco via
-				Whatsapp</a
-			>
+				Whatsapp</a>
 		</footer>
 		<script src="../script2.js"></script>
 		<script src="../app.js"></script>
-		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxhd8FN_-EFOI9sT0tooEX9aBAU3dZXb0    &libraries=places"></script>
-		<script>
-			var map;
-			var directionsService;
-			var directionsDisplay;
-
-			function initialize() {
-				map = new google.maps.Map(document.getElementById("map"), {
-					center: { lat: 0, lng: 0 },
-					zoom: 8,
-				});
-				directionsService = new google.maps.DirectionsService();
-				directionsDisplay = new google.maps.DirectionsRenderer();
-				directionsDisplay.setMap(map);
-			}
-
-			function calcRoute() {
-				var start = localStorage.getItem("LocalPartida")
-				var end = localStorage.getItem("LocalDestino")
-				var request = {
-					origin: start,
-					destination: end,
-					travelMode: "DRIVING",
-				};
-				directionsService.route(request, function (result, status) {
-					if (status == "OK") {
-						directionsDisplay.setDirections(result);
-					}
-				});
-			}
-
-			google.maps.event.addDomListener(window, "load", initialize);
-		</script>
 	</body>
+	<script src="../app.js"></script>
 </html>

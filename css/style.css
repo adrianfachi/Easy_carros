@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2? family= Krona+One & family= Montserrat:wght@400;600 & family= Outfit & display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Inter & family= Krona+One & family= Montserrat:wght@400;600 & family= Outfit & display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -112,7 +115,6 @@ footer {
 
 @media (max-width: 1200px) {
     main {
-        height: auto;
         flex-direction: column-reverse;
     }
 
@@ -126,6 +128,7 @@ footer {
 }
 
 @media (max-width: 600px) {
+    
     #botao-menu {
         display: flex;
     }
@@ -160,6 +163,14 @@ footer {
 
     .fale-conosco {
         margin-right: 50%;
+    }
+}
+
+@media (max-width: 350px) {
+    .fale-conosco {
+        font-size: 0,8rem;
+        padding: 5px;
+        margin-right: 75%;
     }
 }
 

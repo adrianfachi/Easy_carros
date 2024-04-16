@@ -130,166 +130,58 @@ label {
     border-top-left-radius: 10px;
 }
 
-.carro1 {
+.carros {
     display: flex;
     justify-content: end;
     align-items: end;
+    background-position: center;
+    width: 13vw;
+    height: 188px;
+    border-radius: 2%;
+    transition:0.5s ease;
+}
+
+.carros:hover .preco{
+    display: none;
+}
+
+.carros:hover {
+    justify-content: center;
+    align-items: center;
+    transform: scale(1.03);
+}
+
+.carros:hover .selecionar{
+    display: inline;
+    cursor: pointer;
+}
+
+#carro1 {
     background-image: url(../Imagens/carro1_selecao.jpg);
-    background-position: center;
-    width: 258px;
-    height: 188px;
-    border-radius: 2%;
-    transition:0.5s ease;
 }
 
-.carro1:hover .preco{
-    display: none;
-}
-
-.carro1:hover {
-    justify-content: center;
-    align-items: center;
-    transform: scale(1.03);
-}
-
-.carro1:hover .selecionar{
-    display: inline;
-    cursor: pointer;
-}
-
-.carro2 {
-    display: flex;
-    align-items: end;
-    justify-content: end;
+#carro2 {
     background-image: url(../Imagens/carro2_selecao.jpg);
-    background-position: center;
-    width: 258px;
-    height: 188px;
-    border-radius: 2%;
-    transition:0.5s ease;
 }
 
-.carro2:hover .preco{
+#carro2:hover .preco{
     display: none;
 }
 
-.carro2:hover {
-    align-items: center;
-    justify-content: center;
-    transform: scale(1.03);
-}
-
-.carro2:hover .selecionar{
-    display: inline;
-    cursor: pointer;
-}
-
-.carro3 {
-    display: flex;
-    align-items: end;
-    justify-content: end;
+#carro3 {
     background-image: url(../Imagens/carro3_selecao.jpg);
-    background-position: center;
-    width: 258px;
-    height: 188px;
-    border-radius: 2%;
-    transition:0.5s ease;
 }
 
-.carro3:hover .preco{
-    display: none;
-}
-
-.carro3:hover {
-    align-items: center;
-    justify-content: center;
-    transform: scale(1.03);
-}
-
-.carro3:hover .selecionar{
-    display: inline;
-    cursor: pointer;
-}
-
-.carro4 {
-    display: flex;
-    align-items: end;
-    justify-content: end;
+#carro4 {
     background-image: url(../Imagens/carro4_selecao.jpg);
-    background-position: center;
-    width: 258px;
-    height: 188px;
-    border-radius: 2%;
-    transition:0.5s ease;
 }
 
-.carro4:hover .preco{
-    display: none;
-}
-
-.carro4:hover {
-    align-items: center;
-    justify-content: center;
-    transform: scale(1.03);
-}
-
-.carro4:hover .selecionar{
-    display: inline;
-    cursor: pointer;
-}
-
-.carro5 {
-    display: flex;
-    align-items: end;
-    justify-content: end;
+#carro5 {
     background-image: url(../Imagens/carro5_selecao.jpg);
-    background-position: center;
-    width: 258px;
-    height: 188px;
-    border-radius: 2%;
-    transition:0.5s ease;
 }
 
-.carro5:hover .preco{
-    display: none;
-}
-
-.carro5:hover {
-    align-items: center;
-    justify-content: center;
-    transform: scale(1.03);
-}
-
-.carro5:hover .selecionar{
-    display: inline;
-    cursor: pointer;
-}
-
-.carro6 {
-    display: flex;
-    align-items: end;
-    justify-content: end;
+#carro6 {
     background-image: url(../Imagens/carro6_selecao.jpg);
-    background-position: center;
-    width: 258px;
-    height: 188px;
-    border-radius: 2%;
-    transition:0.5s ease;
-}
-
-.carro6:hover .preco{
-    display: none;
-}
-
-.carro6:hover {
-    align-items: center;
-    justify-content: center;
-    transform: scale(1.03);
-}
-
-.carro6:hover .selecionar{
-    display: inline;
-    cursor: pointer;
 }
 
 h3 {
@@ -303,112 +195,28 @@ h3 {
     font-family: var(--font-outfit);
 }
 
-.carro7 {
-    display: flex;
-    align-items: end;
-    justify-content: end;
+#carro7 {
     background-image: url(../Imagens/carro7_selecao.jpg);
-    background-position: center;
     width: 167px;
     height: 138px;
-    border-radius: 2%;
-    transition:0.5s ease;
 }
 
-.carro7:hover .preco{
-    display: none;
-}
-
-.carro7:hover {
-    align-items: center;
-    justify-content: center;
-    transform: scale(1.03);
-}
-
-.carro7:hover .selecionar{
-    display: inline;
-    cursor: pointer;
-}
-
-.carro8 {
-    display: flex;
-    align-items: end;
-    justify-content: end;
+#carro8 {
     background-image: url(../Imagens/carro8_selecao.jpg);
-    background-position: center;
     width: 167px;
     height: 138px;
-    border-radius: 2%;
-    transition:0.5s ease;
 }
 
-.carro8:hover .preco{
-    display: none;
-}
-
-.carro8:hover {
-    align-items: center;
-    justify-content: center;
-    transform: scale(1.03);
-}
-
-.carro8:hover .selecionar{
-    display: inline;
-    cursor: pointer;
-}
-
-.carro9 {
-    display: flex;
-    align-items: end;
-    justify-content: end;
+#carro9 {
     background-image: url(../Imagens/carro9_selecao.jpg);
-    background-position: center;
     width: 167px;
     height: 138px;
-    border-radius: 2%;
-    transition:0.5s ease;
 }
 
-.carro9:hover .preco{
-    display: none;
-}
-
-.carro9:hover {
-    align-items: center;
-    justify-content: center;
-    transform: scale(1.03);
-}
-
-.carro9:hover .selecionar{
-    display: inline;
-    cursor: pointer;
-}
-
-.carro10 {
-    display: flex;
-    align-items: end;
-    justify-content: end;
+#carro10 {
     background-image: url(../Imagens/carro10_selecao.jpg);
-    background-position: center;
     width: 167px;
     height: 138px;
-    border-radius: 2%;
-    transition:0.5s ease;
-}
-
-.carro10:hover .preco{
-    display: none;
-}
-
-.carro10:hover {
-    align-items: center;
-    justify-content: center;
-    transform: scale(1.03); 
-}
-
-.carro10:hover .selecionar{
-    display: inline;
-    cursor: pointer;
 }
 
 .direitos {
@@ -418,6 +226,46 @@ h3 {
 footer {
     position: relative;
 }
+
+.principal {
+    display: flex;
+    gap: 30px
+}
+
+@media (max-width: 1200px) {
+    main {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .carros {
+        width: 20vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .principaisVeiculos {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    section {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .carros {
+        width: 45vw;
+    }
+}
+
+@media (max-width: 350px) {
+    .carros {
+        width: 60vw;
+    }
+}
+
 
 
 

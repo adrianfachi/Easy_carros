@@ -33,3 +33,10 @@ p {
     color: #ffffff;
     line-height: 150%;
 }
+
+@media (max-width: 800px) {
+    section {
+        width: 80vw;
+        padding: 10px;
+    }
+}
