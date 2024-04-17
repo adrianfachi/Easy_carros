@@ -8,7 +8,6 @@
 
 main {
     background-image: url(../Imagens/RotaFinder3.png);
-    position: relative;
     display: flex;
     align-items: end;
 }

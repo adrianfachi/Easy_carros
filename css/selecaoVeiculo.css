@@ -16,6 +16,11 @@ main {
     height: auto;
 }
 
+p {
+    font-family: var(--font-outfit);
+    font-size: 0.8rem;
+}
+
 section {
     width: auto;
     border-radius: 9px;

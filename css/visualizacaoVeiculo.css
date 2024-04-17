@@ -32,13 +32,21 @@ section {
     gap: 35px;
 }
 
-#voltar {
+#voltar1 {
     position: absolute;
     margin-top: -30px;
     margin-left: -90px;
     color: #0084F9;
     font-family: var(--font-outfit);
     font-size: .8rem;
+}
+
+#voltar2 {
+    position: relative;
+    color: #0084F9;
+    font-family: var(--font-outfit);
+    font-size: .8rem;
+    z-index: -1;
 }
 
 h1 {
@@ -108,8 +116,12 @@ h2 {
     }
     section {
         width: 80vw;
-        align-items: center;
         padding: 10px;
+    }
+
+    section#especificacoes {
+        width: 50vw;
+        align-items: center;
     }
     .principal {
         padding: 0;
@@ -119,10 +131,25 @@ h2 {
     #imgPrincipal {
         width: 60vw;
     }
+
+    #voltar1 {
+        margin-left: 10px;
+    }
+    
 }
 @media (max-width: 700px) {
     #imgPrincipal {
         width: 70vw;
+    }
+    #voltar1 {
+        z-index: -1;
+    }
+
+    #voltar2 {
+        z-index: 1;
+    }
+    section#especificacoes {
+        width: 80vw;
     }
 }
 

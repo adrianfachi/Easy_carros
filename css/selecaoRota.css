@@ -10,7 +10,6 @@ main {
 	background-image: url(../Imagens/pexels-photo-16035625.jpeg);
 	background-position: center 65%;
 	background-size: cover;
-	position: relative;
 	display: flex;
 	align-items: end;
 }

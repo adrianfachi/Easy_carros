@@ -1,21 +1,16 @@
 const dataPartida = localStorage.getItem("dataPartida");
 const dataRetorno = localStorage.getItem("dataRetorno");
-const dataEscolhidaPartida = `${dataPartida.slice(-2)}/${dataPartida.slice(
-	5,
-	7
-)}/${dataPartida.slice(0, 4)}`;
-const dataEscolhidaRetorno = `${dataRetorno.slice(-2)}/${dataRetorno.slice(
-	5,
-	7
-)}/${dataRetorno.slice(0, 4)}`;
+const dataEscolhidaPartida = `${dataPartida.slice(-2)}/${dataPartida.slice(5, 7)}/${dataPartida.slice(0, 4)}`;
+const dataEscolhidaRetorno = `${dataRetorno.slice(-2)}/${dataRetorno.slice(5, 7)}/${dataRetorno.slice(0, 4)}`;
 datas.textContent += `${dataEscolhidaPartida} até ${dataEscolhidaRetorno}`;
 
 let diaPartida = Number(dataEscolhidaPartida.slice(0, 2));
 let diaRetorno = Number(dataEscolhidaRetorno.slice(0, 2));
-const mesPartida = dataEscolhidaRetorno.slice(3, 5);
+const mesPartida = Number(dataEscolhidaPartida.slice(3, 5));
+const mesRetorno = Number(dataEscolhidaRetorno.slice(3, 5));
 let quantidadeDias;
 
-if (diaPartida > diaRetorno) {
+if (mesPartida < mesRetorno) {
 	if (mesPartida == "02") {
 		diaRetorno += 28;
 		quantidadeDias = diaRetorno - diaPartida;
@@ -32,8 +27,9 @@ if (diaPartida > diaRetorno) {
 		quantidadeDias = diaRetorno - diaPartida;
 	}
 } else {
-	quantidadeDias = diaRetorno - diaPartida;
+	quantidadeDias = diaRetorno+1 - diaPartida;
 }
+
 
 localStorage.setItem("quantidadeDias", JSON.stringify(quantidadeDias));
 
@@ -84,12 +80,5 @@ function visualizarVeiculos() {
 		localStorage.setItem("LocalDestino", localStorage.getItem("LocalDestinoCity") + ", " + localStorage.getItem("LocalDestinoUF"));
 	}
 }
-
-
-
-visualizarVeiculos.addEventListener('click', async function(){
-	console.log(localStorage.getItem("LocalDestino"))
-	console.log(CidadeUf)
-})
 
 
